@@ -1,0 +1,124 @@
+/*Chat Styles*/
+#chatWrapper{
+    background-image: url("/user/assets/images/whitewall.png");
+    background-size: 410px;
+    background-position: center;
+    min-height: 300px;
+    max-height: 350px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding:15px;
+    overflow : scroll;
+    position: relative;
+}
+.chatWrapper{
+    position: relative;
+}
+.chatWrapper::before{
+    content: "ابتدا یک چت را انتخاب کنید!";
+    padding-top:  100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.51);
+    color: white;
+}
+.admin-chat{
+    background-color: #E0FEC6;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.user-chat{
+    background-color: #ffffff;
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.user-chat-img{
+    display: block;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    width: 50%;
+    height: auto;
+}
+.load_more_btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #919191;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+;
+
+}
+.customer-box{
+    border : 1px solid lightgray;
+    display : flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor : pointer;
+    margin-bottom: 10px;
+}
+.customer-box.active{
+    background-color:lightgray;
+}
+
+.customer-box:hover{
+    background-color : rgba(245, 245, 245, 0.47);
+}
+.customer-box--img{
+    border:1px solid #e0e0e0;
+    border-radius: 50% !important;
+}
+.more-customer{
+    font-size: 0.8rem;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border : none;
+    margin: 20px 0;
+}
+#customer_search{
+    width : 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    border : none;
+    background-color: #eaeaea;
+    padding: 10px 5px;
+}
+audio{
+    display: block;
+    margin-bottom: 10px;
+}
+.mini-btns {
+    background-color: transparent;
+    border : none;
+}
+.mini-btns i {
+    background-color: rgba(211, 211, 211, 0.57);
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    color: #5c5c5c;
+    transition: 0.5s;
+}
+.mini-btns i:hover{
+    background-color: #E14D45;
+    color: white;
+
+}
+.customer-box:focus{
+    border-color: red!important;
+}

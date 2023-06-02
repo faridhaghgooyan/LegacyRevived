@@ -1,0 +1,22 @@
+*{
+    font-family: IRANSans(FaNum)!important;
+}
+.menu-icon , .menu-arrow{
+    padding: 0 10px;
+}
+.menu-arrow{
+    transform: rotate(180deg);
+}
+.nav-link:hover{
+    color: #e14d43!important;
+}
+.priceRange::after,.priceRange::before{
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+.iransans{
+    font-family: IRANSans(FaNum)!important;
+    direction: rtl!important;
+}

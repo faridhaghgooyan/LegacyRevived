@@ -1,0 +1,92 @@
+@font-face {
+    font-family: IRANSansWeb(FaNum);
+    src: url(http://clog.tootfarangee.com/global_assets/fonts/IRANSansWeb(FaNum).woff2);
+}
+*{
+    font-family: IRANSansWeb(FaNum);
+}
+
+.carousel-control, .modal-backdrop.in {
+    z-index: 100!important;
+}
+.bg-tootfarangee{
+    background-color: #e12b26;
+    color: white;
+    padding: 5px;
+}
+.text-tootfarangee{
+    color: #e12b26;
+}
+.profileImage {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+.w-100{
+    width: 100% !important;
+}
+.curve-border{
+    padding: 5px;
+    margin: 5px 0px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.d-inline{
+    display: inline!important;
+}
+.select2-results{
+    text-align: right!important;
+}
+#select2-customerid-container , .select2-selection{
+    direction: rtl;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+.badge-primary {
+    color: #fff!important;
+    background-color: #007bff!important;
+}
+.badge-secondary {
+    color: #fff!important;
+    background-color: #6c757d!important;
+}
+.badge-success {
+    color: #fff!important;
+    background-color: #28a745!important;
+}
+.badge-danger {
+    color: #fff!important;
+    background-color: #dc3545!important;
+}
+.badge-warning {
+    color: #212529!important;
+    background-color: #ffc107!important;
+}
+.badge-info {
+    color: #fff!important;
+    background-color: #17a2b8!important;
+}
+.badge-light {
+    color: #212529!important;
+    background-color: #f8f9fa!important;
+}
+.badge-dark {
+    color: #fff!important;
+    background-color: #343a40!important;
+}
+
+.modal-body{
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ececec;
+}

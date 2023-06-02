@@ -1,0 +1,81 @@
+.messageBox {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.messageInput {
+    border-radius: 10px;
+    border: 1px dashed lightgray;
+    padding: 15px;
+    width: 100%;
+}
+
+.upload-btn-wrapper i {
+    cursor: pointer;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    color: #6c757d;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+
+.uploadbtn {
+    border: 2px solid gray;
+    color: gray;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-color: yellow;
+    width: 30px!important;
+    cursor: pointer;
+
+}
+.user-chat-box{
+    display: block;
+    background-image: linear-gradient(to right,#D3CCE3,#E9E4F0);
+    color: #1d1d1d;
+    padding: 10px;
+    border-radius: 30px 0px 30px 30px;
+    width: max-content;
+    margin: 5px 0px;
+}
+.user-chat-img{
+    /*width: max-content;*/
+    height: auto;
+    text-align: right;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.user-chat-img:hover , img-btn:hover .user-chat-img {
+    filter: grayscale(80%);
+    cursor: pointer;
+
+}
+.admin-chat-box{
+    display: block;
+    background-image: linear-gradient(to right,#e52d27,#b31217);
+    color: white;
+    padding: 12px;
+    border-radius: 30px 20px 30px 0px;
+    width: max-content;
+    margin: 5px 0px;
+}

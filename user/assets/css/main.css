@@ -1,0 +1,13 @@
+@font-face {
+    font-family: IranSans;
+    src: url('/global_assets/fonts/IRANSansWeb(FaNum).woff2');
+}
+*{
+    font-family: IranSans;
+}
+body {
+    background-color : #eeeeee;
+}
+#sidebar{
+    height : 100vh;
+}

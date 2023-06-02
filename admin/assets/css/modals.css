@@ -1,0 +1,24 @@
+/* Costume Modals */
+.modal-content{
+    background-color: #181818!important;
+    color: white;
+}
+.modal-body{
+    border: 1px dashed #3b3b3b!important;
+    font-size: 1.4rem!important;
+    margin: 10px!important;
+}
+.modal-header{
+    border-bottom : none!important;
+}
+.btn-tootfarangee {
+    background-color: #e12b26!important;
+    color: white;
+}
+.btn-tootfarangee:hover {
+    background-color: #000000 !important;
+    color: white!important;
+}
+.modal-footer{
+    border-top : none!important;
+}

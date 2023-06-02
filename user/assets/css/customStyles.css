@@ -1,0 +1,38 @@
+.bg-tootfarangee {
+    background-color: #e12b26;
+    color: white;
+}
+.text-tootfarangee{
+    color: #e12b26;
+}
+.btn-tootfarangee-red {
+    background-color: #e12b26;
+    color: white;
+    padding: 0 15px!important;
+    border-radius: 5px;
+    border: none;
+    margin: 5px!important;
+}
+.btn-tootfarangee-gray {
+    background-color: #d2d2d2;
+    color: #7a7a7a!important;
+    padding: 0 15px!important;
+    border-radius: 5px;
+    border: none;
+    margin: 5px!important;
+    max-height: 30px;
+    cursor: pointer;
+}
+.btn-tootfarangee-gray:hover {
+    background-color: #cf231e;
+    color: white!important;
+}
+.circle-img {
+    border: 5px solid #cf231e;
+    border-radius: 50%;
+}
+.user-inputs {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}

@@ -1,0 +1,9 @@
+{
+    "require": {
+        "kavenegar/php": "^1.2",
+      "ext-json": "*"
+    },
+    "psr-4" : {
+      "app\\" : "app"
+    }
+}

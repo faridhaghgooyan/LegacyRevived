@@ -1,0 +1,19 @@
+.swal2-container.swal2-center > .swal2-popup{
+    font-size : 1.4rem;
+
+}
+.modal-backdrop{
+    z-index : -1;
+}
+.modal input:not(input[type=submit]) , .modal textarea{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.32);
+    padding: 5px 10px;
+}
+.modal input[type=submit]{
+    margin: 20px 0;
+}

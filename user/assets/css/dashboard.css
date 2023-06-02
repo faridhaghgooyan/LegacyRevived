@@ -1,0 +1,40 @@
+.btn-chat{
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.bg-whatsapp{
+    min-height: 250px;
+    max-height: 60vh;
+    overflow: auto;
+    background-image: url("/storage/chatbackground.jpg");
+    background-repeat: repeat;
+    background-size: 210px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#messageBar{
+    border-radius: 10px;
+}
+#messageBar input[type="text"] {
+    border-radius: 10px;
+    border: 1px dashed lightgray;
+    padding: 15px;
+}
+#messagefile span {
+    cursor: pointer;
+}
+#messagefile a {
+    position: relative;
+    overflow: hidden;
+}
+#messagefile span:hover a {
+    color: red;
+}
+#messagefile a + input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
