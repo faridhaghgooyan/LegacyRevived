@@ -1,13 +1,13 @@
 <?php
-use app\models\supporter;
-use app\models\doctors;
-use app\models\nurses;
-use app\models\payments;
-use app\models\dateConverter;
-use app\models\kavehSms;
-use app\models\tasks;
-use app\models\reception;
-use app\models\Sms;
+use App\Model\supporter;
+use App\Model\doctor;
+use App\Model\nurse;
+use App\Model\payment;
+use App\Model\dateConverter;
+use App\Model\kavehSms;
+use App\Model\task;
+use App\Model\reception;
+use App\Model\Sms;
 
 
 require_once '../app/models/supporter.php';
@@ -23,17 +23,17 @@ require_once '../app/models/sms.php';
 require_once '../app/models/payments.php';
 // Create Object of Classes
 $users_obj = new users();
-$doctors_obj = new doctors();
-$nurse_obj = new nurses();
+$doctors_obj = new doctor();
+$nurse_obj = new nurse();
 $dConverter = new dateConverter();
 $supporter = new supporter();
 $supporter_obj = new supporter();
 $sms_obj = new kavehSms();
-$task_obj = new tasks();
+$task_obj = new task();
 $reception_obj = new reception();
 $admin_obj = new admin();
 $sms_obj = new Sms();
-$payment_obj = new payments();
+$payment_obj = new payment();
 require_once '../app/models/sms.php';
 
 

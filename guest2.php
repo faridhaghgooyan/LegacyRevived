@@ -1,5 +1,5 @@
 <?php
-require_once "app/models/users.php";
+require_once "app/Model/users.php";
 $user_obj = new users();
 if (!isset($_COOKIE['guest_code'])){
     setcookie('guest_code',rand(),time()+(86400 * 1));

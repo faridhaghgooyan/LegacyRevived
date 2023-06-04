@@ -1,11 +1,11 @@
 <?php
-use app\models\dateConverter;
-use app\models\drafts;
+use App\Model\dateConverter;
+use App\Model\draft;
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/drafts.php';
 
 $dateCovert = new dateConverter();
-$drafts_obj = new drafts();
+$drafts_obj = new draft();
 
 switch ($action){
     case 'create':

@@ -1,8 +1,8 @@
 <?php
 
-use app\models\user;
-use app\models\gallery;
-use app\models\dateConverter;
+use App\Model\user;
+use App\Model\gallery;
+use App\Model\dateConverter;
 
 require_once '../app/models/users.php';
 require_once '../app/models/gallery.php';

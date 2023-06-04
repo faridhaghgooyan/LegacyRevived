@@ -1,12 +1,12 @@
 <?php
-use app\models\doctors;
-use app\models\uploader;
-use app\models\payments;
-use app\models\dateConverter;
-use app\models\services;
-use app\models\invoices;
-use app\models\Sms;
-use app\models\Zarinpal;
+use App\Model\doctor;
+use App\Model\uploader;
+use App\Model\payment;
+use App\Model\dateConverter;
+use App\Model\service;
+use App\Model\invoice;
+use App\Model\Sms;
+use App\Model\Zarinpal;
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
 require_once '../app/models/uploader.php';
@@ -19,11 +19,11 @@ require_once '../app/models/Zarinpal.php';
 require_once '../../includes.php';
 
 $users_obj = new users();
-$dr_obj = new doctors();
+$dr_obj = new doctor();
 $uploader = new uploader();
-$payments_obj = new payments();
-$services_obj = new services();
-$invoices_obj = new invoices();
+$payments_obj = new payment();
+$services_obj = new service();
+$invoices_obj = new invoice();
 $Zarinpal_obj = new Zarinpal();
 $sms_obj = new Sms();
 switch ($action){
@@ -123,7 +123,7 @@ switch ($action){
         break;
     case 'chat_history':
         $chat_history = $users_obj->chat_list();
-        $doctors = new doctors();
+        $doctors = new doctor();
         $user = new users();
         break;
     case 'unpaidInvoices':

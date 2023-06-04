@@ -1,9 +1,9 @@
 <?php
-use app\models\doctors;
-use app\models\uploader;
+use App\Model\doctor;
+use App\Model\uploader;
 require_once '../app/models/doctors.php';
 require_once '../app/models/uploader.php';
-$doctor_obj = new doctors();
+$doctor_obj = new doctor();
 $uploader = new uploader();
 switch ($action){
     case 'tasks_list':

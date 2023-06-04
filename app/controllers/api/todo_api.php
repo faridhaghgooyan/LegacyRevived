@@ -1,11 +1,11 @@
 <?php
-require_once dirname(__DIR__,2)."/models/uploader.php";
-require_once dirname(__DIR__,2)."/models/todo.php";
-require_once dirname(__DIR__,2)."/models/users.php";
-require_once dirname(__DIR__,2)."/models/dateConverter.php";
-use app\models\todo;
-use app\models\uploader;
-use app\models\dateConverter;
+require_once dirname(__DIR__, 2) . "/Model/uploader.php";
+require_once dirname(__DIR__, 2) . "/Model/todo.php";
+require_once dirname(__DIR__, 2) . "/Model/users.php";
+require_once dirname(__DIR__, 2) . "/Model/dateConverter.php";
+use App\Model\todo;
+use App\Model\uploader;
+use App\Model\dateConverter;
 $todo_obj = new todo();
 $user_obj = new users();
 $uploader_obj = new uploader();

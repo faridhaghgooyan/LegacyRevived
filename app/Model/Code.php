@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__, 3)."/config.php";
+namespace App\Model;
 
 class Code{
     protected $code = 0;

@@ -1,8 +1,6 @@
 <?php
-namespace app\models;
-require_once dirname(__DIR__, 3)."/config.php";
-
-class todo{
+namespace App\Model;
+class Todo{
     public function __construct(){
         global $db;
         global $table;

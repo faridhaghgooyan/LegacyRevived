@@ -1,8 +1,8 @@
 <?php
-use app\models\uploader;
-use app\models\payments;
-use app\models\invoices;
-use app\models\Zarinpal;
+use App\Model\uploader;
+use App\Model\payment;
+use App\Model\invoice;
+use App\Model\Zarinpal;
 
 require_once '../app/models/users.php';
 require_once '../app/models/uploader.php';
@@ -12,8 +12,8 @@ require_once '../app/models/Zarinpal.php';
 
 $users_obj = new users();
 $uploader = new uploader();
-$invoices_obj = new invoices();
-$payments_obj = new payments();
+$invoices_obj = new invoice();
+$payments_obj = new payment();
 $zarinpal_obj = new Zarinpal();
 
 switch ($action){

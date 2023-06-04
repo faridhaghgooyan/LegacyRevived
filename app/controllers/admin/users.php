@@ -1,10 +1,10 @@
 <?php
-use app\models\doctors;
-use app\models\uploader;
-use app\models\dateConverter;
-use app\models\finance;
-use app\models\chat;
-use app\models\notes;
+use App\Model\doctor;
+use App\Model\uploader;
+use App\Model\dateConverter;
+use App\Model\finance;
+use App\Model\chat;
+use App\Model\note;
 require_once '../app/models/admin.php';
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
@@ -16,13 +16,13 @@ require_once '../app/models/permissions.php';
 require_once '../app/models/notes.php';
 $admin_obj = new admin();
 $user_obj = new users();
-$dr_obj = new doctors();
+$dr_obj = new doctor();
 $uploader = new uploader();
 $permission_obj = new permissions();
 $finance_obj = new finance();
 $chat_obj = new chat();
 $dateConvertor_obj = new dateConverter();
-$note_obj = new notes();
+$note_obj = new note();
 
 switch ($action){
     case 'login':
@@ -172,7 +172,7 @@ switch ($action){
         break;
     case 'chat_history':
         $chat_history = $user_obj->chat_list();
-        $doctors = new doctors();
+        $doctors = new doctor();
         $user = new users();
         break;
     case 'cities':

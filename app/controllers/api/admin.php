@@ -1,7 +1,7 @@
 <?php
-use app\models\chat;
-use app\models\uploader;
-use app\models\services;
+use App\Model\chat;
+use App\Model\uploader;
+use App\Model\service;
 require_once '../app/models/uploader.php';
 require_once '../app/models/chat.php';
 require_once '../app/models/users.php';
@@ -10,7 +10,7 @@ require_once '../app/models/admin.php';
 $uploader = new uploader();
 $chat = new chat();
 $user = new users();
-$services_obj = new services();
+$services_obj = new service();
 $admin_obj = new admin();
 switch ($action){
     case 'admin_check_number':

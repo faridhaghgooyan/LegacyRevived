@@ -1,13 +1,13 @@
 <?php
-use app\models\users;
-use app\models\uploader;
-use app\models\ticket;
+use App\Model\user;
+use App\Model\uploader;
+use App\Model\ticket;
 
 require_once '../app/models/users.php';
 require_once '../app/models/uploader.php';
 require_once '../app/models/ticket.php';
 
-$users_obj = new users();
+$users_obj = new user();
 $uploader = new uploader();
 $ticket_obj = new ticket();
 
@@ -43,6 +43,6 @@ switch ($action){
         break;
     case 'list' :
         $tickets = $ticket_obj->list_ticket();
-        $user = new users();
+        $user = new user();
         break;
 }

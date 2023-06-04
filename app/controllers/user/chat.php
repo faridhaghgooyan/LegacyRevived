@@ -1,13 +1,13 @@
 <?php
-use app\models\chat;
-use app\models\uploader;
-use app\models\users;
+use App\Model\chat;
+use App\Model\uploader;
+use App\Model\user;
 require_once '../app/models/uploader.php';
 require_once '../app/models/chat.php';
 require_once '../app/models/users.php';
 $uploader = new uploader();
 $chat = new chat();
-$user = new users();
+$user = new user();
 switch ($action){
     case 'store' :
         $filetype = NULL;

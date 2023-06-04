@@ -1,7 +1,7 @@
 <?php
-use app\models\uploader;
-use app\models\todo;
-use app\models\dateConverter;
+use App\Model\uploader;
+use App\Model\todo;
+use App\Model\dateConverter;
 
 require_once '../app/models/users.php';
 require_once '../app/models/uploader.php';

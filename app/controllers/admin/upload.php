@@ -1,5 +1,5 @@
 <?php
-use app\models\uploader;
+use App\Model\uploader;
 require_once '..\models\uploader.php';
 
 $file = $_FILES["fileToUpload"];

@@ -1,9 +1,9 @@
 <?php
-use app\models\chat;
-use app\models\uploader;
-use app\models\services;
-use app\models\dateConverter;
-use app\models\notes;
+use App\Model\chat;
+use App\Model\uploader;
+use App\Model\service;
+use App\Model\dateConverter;
+use App\Model\note;
 require_once '../app/models/uploader.php';
 require_once '../app/models/chat.php';
 require_once '../app/models/users.php';
@@ -14,10 +14,10 @@ require_once '../app/models/notes.php';
 $uploader = new uploader();
 $chat = new chat();
 $user = new users();
-$services_obj = new services();
+$services_obj = new service();
 $admin_obj = new admin();
 $dateConverter = new dateConverter();
-$notes_obj = new notes();
+$notes_obj = new note();
 switch ($action){
     case 'store':
 

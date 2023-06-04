@@ -1,6 +1,6 @@
 <?php
 require_once "user/section/header.php";
-require_once "app/models/users.php";
+require_once "app/Model/users.php";
 
 ?>
 <?php

@@ -1,6 +1,6 @@
 <?php
-namespace app\models;
-class dateConverter {
+namespace App\Model;
+class DateConverter {
 
     public $gMonthDays = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
     public $jMonthDays = array(31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29);

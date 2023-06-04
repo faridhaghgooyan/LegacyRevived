@@ -1,22 +1,24 @@
 <?php
-use app\models\dateConverter;
-use app\models\payments;
-use app\models\todo;
-use app\models\reception;
-include_once "../config.php";
-require_once '../app/models/permissions.php';
-require_once '../app/models/admin.php';
-require_once '../app/models/dateConverter.php';
-require_once '../app/models/todo.php';
-require_once '../app/models/reception.php';
-require_once '../app/models/payments.php';
-$todo_obj = new todo();
-$reception_obj = new reception();
-// Global Functions
-$permission = new permissions();
-$admin_obj = new admin();
-$date_converter = new dateConverter();
-$payments_obj = new payments();
+require_once '../vendor/autoload.php';
+use App\Model\{
+    Todo,
+    Reception,
+    Admin,
+    DateConverter,
+    Payment,
+    Permissions
+};
+$todo_obj = new Todo;
+$reception_obj = new Reception;
+$admin_obj = new Admin;
+$date_converter = new DateConverter;
+$payments_obj = new Payment;
+$permission = new Permissions;
+
+
+
+
+
 // Global Variables
 $admin_info = '';
 if (isset($_COOKIE['TF-Email'])){

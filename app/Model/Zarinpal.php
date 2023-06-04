@@ -1,7 +1,6 @@
 <?php
-namespace app\models;
-require_once dirname(__DIR__,3).'/config.php';
-use app\models\payments;
+namespace App\Model;
+use App\Model\Payment;
 class Zarinpal {
     private $merchant_id = 'bcd15e1c-b816-11ea-b520-000c295eb8fc';
     private $callback = 'https://clog.tootfarangee.com/user/?c=payments&a=callback';
@@ -42,7 +41,7 @@ class Zarinpal {
         } else {
             if (empty($result['errors'])) {
                 if ($result['data']['code'] == 100) {
-                    $payment_obj = new Payments();
+                    $payment_obj = new payment();
                     $payment = $payment_obj->add_payment_code((object)$invoice_data,(object)$customer_data,$result['data']["authority"]);
                     header('Location: https://www.zarinpal.com/pg/StartPay/' . $result['data']["authority"]);
                 }

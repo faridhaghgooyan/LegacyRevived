@@ -1,14 +1,14 @@
 <?php
-use app\models\users;
-use app\models\permissions;
-use app\models\dateConverter;
-use app\models\kavehSms;
-use app\models\notes;
+use App\Model\user;
+use App\Model\permissions;
+use App\Model\dateConverter;
+use App\Model\kavehSms;
+use App\Model\note;
 require_once '../app/models/users.php';
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/kavehSms.php';
 require_once '../app/models/notes.php';
-$notes_obj = new notes();
+$notes_obj = new note();
 $dateCovert = new dateConverter();
 
 

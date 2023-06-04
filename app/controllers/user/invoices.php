@@ -1,6 +1,6 @@
 <?php
-use app\models\uploader;
-use app\models\invoices;
+use App\Model\uploader;
+use App\Model\invoice;
 
 require_once '../app/models/users.php';
 require_once '../app/models/uploader.php';
@@ -8,7 +8,7 @@ require_once '../app/models/invoices.php';
 
 $users_obj = new users();
 $uploader = new uploader();
-$invoices_obj = new invoices();
+$invoices_obj = new invoice();
 
 switch ($action){
     case 'idPay' :

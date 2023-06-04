@@ -1,17 +1,6 @@
 <?php
-namespace app\models;
-if (file_exists('../config.php')){
-    require_once '../config.php';
-    require '/vendor/autoload.php';
-
-
-} else {
-    require_once '../../config.php';
-    require '../vendor/autoload.php';
-
-}
-
-class kavehSms{
+namespace App\Model;
+class KavehSms{
     public function __construct(){
         global $db;
         $this->db = $db;

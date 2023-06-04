@@ -1,9 +1,9 @@
 <?php
-use app\models\doctors;
-use app\models\uploader;
-use app\models\services;
-use app\models\chat;
-use app\models\dateConverter;
+use App\Model\doctor;
+use App\Model\uploader;
+use App\Model\service;
+use App\Model\chat;
+use App\Model\dateConverter;
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
 require_once '../app/models/uploader.php';
@@ -11,9 +11,9 @@ require_once '../app/models/services.php';
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/chat.php';
 $user_obj = new users();
-$dr_obj = new doctors();
+$dr_obj = new doctor();
 $uploader = new uploader();
-$services_obj = new services();
+$services_obj = new service();
 $date_converter = new dateConverter();
 $chat_obj = new chat();
 switch ($action){

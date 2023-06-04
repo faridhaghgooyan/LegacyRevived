@@ -1,11 +1,6 @@
 <?php
-namespace app\models;
-if (file_exists('../config.php')){
-    require_once '../config.php';
-} else {
-    require_once '../../config.php';
-}
-class main{
+namespace App\Model;
+class Main{
     public function __construct(){
         global $db;
         $this->db = $db;

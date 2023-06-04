@@ -1,6 +1,7 @@
 <?php
-require_once '../app/models/users.php';
-class permissions{
+namespace App\Model;
+use App\Model\User;
+class Permissions{
     public function checkPermission($roll,$controller,$action){
         $access = false;
         $users_obj = new users();

@@ -1,5 +1,5 @@
 <?php
-use app\models\chat;
+use App\Model\chat;
 require_once '../app/models/chat.php';
 require_once '../app/models/users.php';
 $chat_obj = new chat();

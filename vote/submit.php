@@ -1,15 +1,15 @@
 <?php
-use app\models\supporter;
-use app\models\users;
-use app\models\tasks;
-use app\models\kavehSms;
-require '../app/models/supporter.php';
-require '../app/models/users.php';
-require '../app/models/tasks.php';
-require '../app/models/kavehSms.php';
+use App\Model\supporter;
+use App\Model\user;
+use App\Model\task;
+use App\Model\kavehSms;
+require '../app/Model/supporter.php';
+require '../app/Model/users.php';
+require '../app/Model/tasks.php';
+require '../app/Model/kavehSms.php';
 $supporter_obj = new supporter();
-$users_obj = new users();
-$task_obj= new tasks();
+$users_obj = new user();
+$task_obj= new task();
 $sms_obj= new kavehSms();
 
 $task_obj->task_vote($_POST);

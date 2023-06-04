@@ -1,13 +1,6 @@
 <?php
-namespace app\models;
-if (file_exists('../config.php')){
-    require_once '../config.php';
-
-} else {
-    require_once '../../config.php';
-
-}
-class drafts{
+namespace App\Model;
+class Draft{
     protected $tbl = 'drafts';
     public function __construct(){
         global $db;

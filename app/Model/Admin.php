@@ -1,5 +1,6 @@
 <?php
-class admin {
+namespace App\Model;
+class Admin {
     protected $tbl = 'admins';
     public function __construct() {
         global $db;

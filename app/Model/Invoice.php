@@ -1,5 +1,5 @@
 <?php
-namespace app\models;
+namespace App\Model;
 if (file_exists('../config.php')){
     require_once '../config.php';
 
@@ -7,7 +7,7 @@ if (file_exists('../config.php')){
     require_once '../../config.php';
 
 }
-class invoices{
+class Invoice{
     protected $tbl = 'invoices';
     const CANCEL_INVOICE = 3;
     const CLEAR_INVOICE = 4;

@@ -1,33 +1,27 @@
 <?php
-use app\models\drafts;
-use app\models\chat;
-use app\models\todo;
-use app\models\reception;
-use app\models\payments;
-use app\models\dateConverter;
-use app\models\tasks;
-use app\models\services;
-use app\models\invoices;
-require_once '../app/models/users.php';
-require_once '../app/models/invoices.php';
-require_once '../app/models/drafts.php';
-require_once '../app/models/chat.php';
-require_once '../app/models/todo.php';
-require_once '../app/models/reception.php';
-require_once '../app/models/payments.php';
-require_once '../app/models/dateConverter.php';
-require_once '../app/models/tasks.php';
-require_once '../app/models/services.php';
-$usersobj = new users();
-$drafts_obj = new drafts();
-$chat_obj = new chat();
-$admin_obj = new admin();
-$todo_obj = new todo();
-$reception_obj = new reception();
-$payments_obj = new payments();
-$task_obj = new tasks();
-$services_obj = new services();
-$invoice_obj = new invoices();
+use App\Model\{
+    User,
+    Admin,
+    Invoice,
+    Draft,
+    Chat,
+    Todo,
+    Reception,
+    Payment,
+    DateConverter,
+    Task,
+    Service
+};
+$usersobj = new User;
+$drafts_obj = new Draft;
+$chat_obj = new Chat;
+$admin_obj = new Admin;
+$todo_obj = new Todo;
+$reception_obj = new Reception;
+$payments_obj = new Payment;
+$task_obj = new Task;
+$services_obj = new Service;
+$invoice_obj = new Invoice;
 
 switch ($action){
     case 'index':

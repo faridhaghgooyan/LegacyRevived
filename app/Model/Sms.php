@@ -1,9 +1,5 @@
 <?php
-namespace app\models;
-require_once dirname(__DIR__, 3)."/config.php";
-
-require dirname(__DIR__, 2).'/vendor/autoload.php';
-
+namespace App\Model;
 use Kavenegar\KavenegarApi;
 use Kavenegar\Exceptions\ApiException;
 use Kavenegar\Exceptions\HttpException;

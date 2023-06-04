@@ -1,13 +1,13 @@
 <?php
-use app\models\nurses;
-use app\models\dateConverter;
+use App\Model\nurse;
+use App\Model\dateConverter;
 
 require_once '../app/models/nurses.php';
 require_once '../app/models/users.php';
 require_once '../app/models/dateConverter.php';
 
 $users_obj = new users();
-$nurses_obj = new nurses();
+$nurses_obj = new nurse();
 $dConverter = new dateConverter();
 
 switch ($action){

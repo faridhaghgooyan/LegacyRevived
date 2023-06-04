@@ -1,8 +1,8 @@
 <?php
-use app\models\users;
-require '../app/models/users.php';
+use App\Model\user;
+require '../app/Model/users.php';
 
-$users_obj = new users();
+$users_obj = new user();
 $uniqueCode = $_POST['uniqidCode'];
 $uniqueCodeHash = md5($_POST['uniqidCode']);
 

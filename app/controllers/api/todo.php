@@ -1,13 +1,13 @@
 <?php
-use app\models\doctors;
-use app\models\dateConverter;
-use app\models\todo;
+use App\Model\doctor;
+use App\Model\dateConverter;
+use App\Model\todo;
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/todo.php';
 $user_obj = new users();
-$dr_obj = new doctors();
+$dr_obj = new doctor();
 $todo_obj = new todo();
 $date_covert = new dateConverter();
 date_default_timezone_set('Asia/Tehran');

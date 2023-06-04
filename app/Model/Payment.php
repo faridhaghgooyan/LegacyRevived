@@ -1,7 +1,7 @@
 <?php
-namespace app\models;
-use app\models\users;
-class payments{
+namespace App\Model;
+use App\Model\user;
+class Payment{
     private $table = 'payments';
     public function __construct()
     {

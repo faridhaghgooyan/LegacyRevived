@@ -1,10 +1,10 @@
 <?php
-use app\models\supporter;
-use app\models\users;
-require '../app/models/supporter.php';
-require '../app/models/users.php';
+use App\Model\supporter;
+use App\Model\user;
+require '../app/Model/supporter.php';
+require '../app/Model/users.php';
 $supporter_obj = new supporter();
-$users_obj = new users();
+$users_obj = new user();
 
 $task_id = $_GET['task'];
 $nurse_id = $supporter_obj->findTask($task_id)['operator_id'];

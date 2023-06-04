@@ -1,25 +1,21 @@
 <?php
-use app\models\doctors;
-use app\models\uploader;
-use app\models\dateConverter;
-use app\models\finance;
-use app\models\chat;
-require_once '../app/models/admin.php';
-require_once '../app/models/users.php';
-require_once '../app/models/doctors.php';
-require_once '../app/models/uploader.php';
-require_once '../app/models/dateConverter.php';
-require_once '../app/models/finance.php';
-require_once '../app/models/chat.php';
-require_once '../app/models/permissions.php';
-$admin_obj = new admin();
-$user_obj = new users();
-$dr_obj = new doctors();
-$uploader = new uploader();
-$permission_obj = new permissions();
-$finance_obj = new finance();
-$chat_obj = new chat();
-
+require_once dirname(__FILE__,4).'/config.php';
+use App\Model\{
+    Admin,
+    User,
+    Doctor,
+    Uploader,
+    Permissions,
+    Finance,
+    Chat
+};
+$admin_obj = new Admin;
+$user_obj = new User;
+$dr_obj = new Doctor;
+$uploader = new Uploader;
+$permission_obj = new Permissions;
+$finance_obj = new Finance;
+$chat_obj = new Chat;
 
 switch ($action){
     case 'login':

@@ -1,13 +1,13 @@
 <?php
 
-use app\models\users;
-use app\models\kavehSms;
+use App\Model\user;
+use App\Model\kavehSms;
 
 if (!empty($_POST['mobile'])){
-    require '../app/models/users.php';
-    require '../app/models/kavehSms.php';
+    require '../app/Model/users.php';
+    require '../app/Model/kavehSms.php';
 
-    $users_obj = new users();
+    $users_obj = new user();
     $sms_obj = new kavehSms();
     $mobile = $_POST['mobile'];
     $sms_obj->reset_password($mobile);

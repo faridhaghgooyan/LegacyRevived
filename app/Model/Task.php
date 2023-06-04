@@ -1,7 +1,6 @@
 <?php
-namespace app\models;
-require_once dirname(__DIR__, 3)."/config.php";
-class tasks {
+namespace App\Model;
+class Task {
     public function __construct(){
         global $db;
         global $table;

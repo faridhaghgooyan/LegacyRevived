@@ -1,7 +1,7 @@
 <?php
-use app\models\dateConverter;
-use app\models\kavehSms;
-use app\models\Sms;
+use App\Model\dateConverter;
+use App\Model\kavehSms;
+use App\Model\Sms;
 require_once '../app/models/users.php';
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/kavehSms.php';

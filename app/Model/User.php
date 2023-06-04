@@ -1,6 +1,6 @@
 <?php
-require_once dirname(__DIR__, 3)."/config.php";
-class users
+namespace App\Model;
+class User
 {
     public $fillable = ["id", "chat_code", "consultant_id", "checked", "details", "roll", "firstName", "lastName", "gender", "mobile", "mobile_2", "email", "password", "forgot_pass_identity", "pic", "online", "status", "jobs", "bio", "amount", "province_id", "city_id", "fullAddress", "token", "link", "comment"];
     public function __construct()

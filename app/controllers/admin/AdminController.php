@@ -1,5 +1,5 @@
 <?php
-use app\models\admin;
+use App\Model\admin;
 require_once '../models/admin.php';
 
 $object = new admin();

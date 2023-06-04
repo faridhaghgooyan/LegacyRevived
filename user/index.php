@@ -5,19 +5,19 @@ include_once "../../config.php";
 include "../../includes.php";
 
 
-use app\models\main;
-use app\models\services;
-include_once "../app/models/users.php";
-include_once "../app/models/main.php";
-include_once "../app/models/permissions.php";
-include_once "../app/models/main.php";
-include_once "../app/models/services.php";
+use App\Model\main;
+use App\Model\service;
+include_once "../app/Model/users.php";
+include_once "../app/Model/main.php";
+include_once "../app/Model/permissions.php";
+include_once "../app/Model/main.php";
+include_once "../app/Model/services.php";
 // Global Functions
 
 $user = new users();
 $main = new main();
 $permission = new permissions();
-$services_obj = new services();
+$services_obj = new service();
 //if (isset($_GET['code'])){
 //    $customer = $user->loginByCode($_GET['code']);
 //    if ($customer){

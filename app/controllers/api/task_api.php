@@ -1,8 +1,8 @@
 <?php
-require_once dirname(__DIR__,2)."/models/tasks.php";
-use app\models\tasks;
+require_once dirname(__DIR__, 2) . "/Model/tasks.php";
+use App\Model\task;
 
-$tasks_obj = new tasks();
+$tasks_obj = new task();
 
 if ($_SERVER['REQUEST_METHOD'] == "GET"){
 

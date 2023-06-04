@@ -1,9 +1,9 @@
 <?php
 
-require_once "../../models/users.php";
-require_once "../../models/sms.php";
-require_once "../../models/code.php";
-use app\models\sms;
+require_once "../../Model/users.php";
+require_once "../../Model/sms.php";
+require_once "../../Model/code.php";
+use App\Model\sms;
 
 if ($_SERVER['REQUEST_METHOD'] == "GET"){
     switch ($_GET['action']){

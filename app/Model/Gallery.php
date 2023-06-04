@@ -1,7 +1,6 @@
 <?php
 
-namespace app\models;
-require_once dirname(__DIR__, 3)."/config.php";
+namespace App\Model;
 class Gallery
 {
     public function __construct()

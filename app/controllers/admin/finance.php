@@ -1,10 +1,10 @@
 <?php
-use app\models\supporter;
-use app\models\doctors;
-use app\models\nurses;
-use app\models\dateConverter;
-use app\models\finance;
-use app\models\payments;
+use App\Model\supporter;
+use App\Model\doctor;
+use App\Model\nurse;
+use App\Model\dateConverter;
+use App\Model\finance;
+use App\Model\payment;
 require_once '../app/models/supporter.php';
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
@@ -14,12 +14,12 @@ require_once '../app/models/finance.php';
 require_once '../app/models/payments.php';
 // Create Object of Classes
 $users_obj = new users();
-$doctors_obj = new doctors();
-$nurse_obj = new nurses();
+$doctors_obj = new doctor();
+$nurse_obj = new nurse();
 $dConverter = new dateConverter();
 $supporter = new supporter();
 $finance = new finance();
-$payments_obj = new payments();
+$payments_obj = new payment();
 
 //Global Variable
 $payment_count = count($finance->newPayments());

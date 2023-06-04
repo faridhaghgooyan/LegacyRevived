@@ -1,8 +1,8 @@
 <?php
-use app\models\chat;
-use app\models\uploader;
-use app\models\services;
-use app\models\notes;
+use App\Model\chat;
+use App\Model\uploader;
+use App\Model\service;
+use App\Model\note;
 require_once '../app/models/uploader.php';
 require_once '../app/models/chat.php';
 require_once '../app/models/users.php';
@@ -11,8 +11,8 @@ require_once '../app/models/notes.php';
 $uploader = new uploader();
 $chat = new chat();
 $user = new users();
-$services_obj = new services();
-$notes_obj = new notes();
+$services_obj = new service();
+$notes_obj = new note();
 switch ($action){
     case 'has_show':
         $chat->rest_has_show($loggedUser_id);

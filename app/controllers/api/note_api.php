@@ -1,12 +1,12 @@
 <?php
-require_once dirname(__DIR__,2)."/models/uploader.php";
-require_once dirname(__DIR__,2)."/models/notes.php";
-require_once dirname(__DIR__,2)."/models/users.php";
-require_once dirname(__DIR__,2)."/models/dateConverter.php";
-use app\models\notes;
-use app\models\uploader;
-use app\models\dateConverter;
-$note_obj = new notes();
+require_once dirname(__DIR__, 2) . "/Model/uploader.php";
+require_once dirname(__DIR__, 2) . "/Model/notes.php";
+require_once dirname(__DIR__, 2) . "/Model/users.php";
+require_once dirname(__DIR__, 2) . "/Model/dateConverter.php";
+use App\Model\note;
+use App\Model\uploader;
+use App\Model\dateConverter;
+$note_obj = new note();
 $user_obj = new users();
 $uploader_obj = new uploader();
 $dateConverter = new dateConverter();

@@ -1,9 +1,9 @@
 <?php
-require_once dirname(__DIR__,2)."/models/uploader.php";
-require_once dirname(__DIR__,2)."/models/chat.php";
-require_once dirname(__DIR__,2)."/models/users.php";
-use app\models\chat;
-use app\models\uploader;
+require_once dirname(__DIR__, 2) . "/Model/uploader.php";
+require_once dirname(__DIR__, 2) . "/Model/chat.php";
+require_once dirname(__DIR__, 2) . "/Model/users.php";
+use App\Model\chat;
+use App\Model\uploader;
 $chat_obj = new chat();
 $user_obj = new users();
 $uploader_obj = new uploader();

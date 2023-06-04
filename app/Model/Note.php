@@ -1,8 +1,8 @@
 <?php
-namespace app\models;
+namespace App\Model;
 require_once dirname(__DIR__, 3)."/config.php";
 
-class notes{
+class Note{
     protected $tbl = 'notes';
     public function __construct(){
         global $db;

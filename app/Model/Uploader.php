@@ -1,9 +1,6 @@
 <?php
-namespace app\models;
-use app\modeles;
-require_once dirname(__DIR__,3).'/config.php';
-
-class uploader {
+namespace App\Model;
+class Uploader {
     public function __construct() {
         global $db;
         $this->db=$db;

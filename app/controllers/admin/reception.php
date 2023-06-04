@@ -1,11 +1,11 @@
 <?php
-use app\models\supporter;
-use app\models\doctors;
-use app\models\nurses;
-use app\models\dateConverter;
-use app\models\uploader;
-use app\models\services;
-use app\models\Sms;
+use App\Model\supporter;
+use App\Model\doctor;
+use App\Model\nurse;
+use App\Model\dateConverter;
+use App\Model\uploader;
+use App\Model\service;
+use App\Model\Sms;
 require_once '../app/models/supporter.php';
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
@@ -17,12 +17,12 @@ require_once '../app/models/sms.php';
 require_once '../app/models/services.php';
 // Create Object of Classes
 $users_obj = new users();
-$doctors_obj = new doctors();
-$nurse_obj = new nurses();
+$doctors_obj = new doctor();
+$nurse_obj = new nurse();
 $dConverter = new dateConverter();
 $supporter = new supporter();
 $uploader = new uploader();
-$services_obj = new services();
+$services_obj = new service();
 $sms_obj = new Sms();
 
 

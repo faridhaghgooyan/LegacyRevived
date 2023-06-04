@@ -1,8 +1,8 @@
 <?php
-use app\models\supporter;
-use app\models\doctors;
-use app\models\nurses;
-use app\models\dateConverter;
+use App\Model\supporter;
+use App\Model\doctor;
+use App\Model\nurse;
+use App\Model\dateConverter;
 require_once '../app/models/supporter.php';
 require_once '../app/models/users.php';
 require_once '../app/models/doctors.php';
@@ -10,8 +10,8 @@ require_once '../app/models/nurses.php';
 require_once '../app/models/dateConverter.php';
 // Create Object of Classes
 $users_obj = new users();
-$doctors_obj = new doctors();
-$nurse_obj = new nurses();
+$doctors_obj = new doctor();
+$nurse_obj = new nurse();
 $dConverter = new dateConverter();
 $supporter = new supporter();
 

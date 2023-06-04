@@ -1,10 +1,10 @@
 <?php
-use app\models\permissions;
-use app\models\dateConverter;
-use app\models\kavehSms;
-use app\models\notes;
-use app\models\invoices;
-use app\models\tasks;
+use App\Model\permissions;
+use App\Model\dateConverter;
+use App\Model\kavehSms;
+use App\Model\note;
+use App\Model\invoice;
+use App\Model\task;
 require_once '../app/models/users.php';
 require_once '../app/models/dateConverter.php';
 require_once '../app/models/kavehSms.php';
@@ -13,8 +13,8 @@ require_once '../app/models/invoices.php';
 require_once '../app/models/tasks.php';
 $user_obj = new users();
 $dateCovert = new dateConverter();
-$invoice_obj = new invoices();
-$task_obj = new tasks();
+$invoice_obj = new invoice();
+$task_obj = new task();
 
 
 switch ($action){
@@ -74,7 +74,7 @@ switch ($action){
     case 'cancel' :
         $invoice = $invoice_obj->read($_GET['id']);
         if ($invoice){
-            $res = $invoice_obj->change_status($_GET['id'],invoices::CANCEL_INVOICE);
+            $res = $invoice_obj->change_status($_GET['id'],invoice::CANCEL_INVOICE);
             if($res){
                 header('location:?c=index&a=index');
             }
@@ -83,7 +83,7 @@ switch ($action){
     case 'clear' :
         $invoice = $invoice_obj->read($_GET['id']);
         if ($invoice){
-            $res = $invoice_obj->change_status($_GET['id'],invoices::CLEAR_INVOICE);
+            $res = $invoice_obj->change_status($_GET['id'],invoice::CLEAR_INVOICE);
             if($res){
                 header('location:?c=index&a=index');
             }

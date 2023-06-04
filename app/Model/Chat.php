@@ -1,6 +1,6 @@
 <?php
-namespace app\models;
-class chat {
+namespace App\Model;
+class Chat {
     protected $tbl = 'chats';
     public function __construct(){
         global $db;

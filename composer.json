@@ -3,7 +3,9 @@
         "kavenegar/php": "^1.2",
       "ext-json": "*"
     },
-    "psr-4" : {
-      "app\\" : "app"
+    "autoload": {
+      "psr-4": {
+        "App\\": "app/"
+      }
     }
 }
